@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showProjects(category) {
+            const consultingProjects = document.getElementById('consulting-projects');
+            const financeProjects = document.getElementById('finance-projects');
+            
+            consultingProjects.style.display = 'none';
+            financeProjects.style.display = 'none';
+
+            if (category === 'consulting') {
+                consultingProjects.style.display = 'block';
+            } else if (category === 'finance') {
+                financeProjects.style.display = 'block';
+            } 
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="Meriphoto.jpg" alt="Dhruv Bhasin" class="profilephoto">
+        <img src="IITGlogo.jpg" alt="IITG" class="iitglogo">
+
+        <div class="container">
+            <h1>Dhruv Bhasin</h1>
+            <p>B.Tech'26 - Chemical Science and Technology</p>
+            <p>Indian Institute of Technology, Guwahati</p>
+            <div class="contact-info">
+                <a href="tel:+919990041164">+91-9990041164</a> |
+                <a href="mailto:b.dhruv@iitg.ac.in">b.dhruv@iitg.ac.in</a> |
+                <a href="mailto:dhruv.bhasin1312@gmail.com">dhruv.bhasin1312@gmail.com</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Dhruvcoder1312" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/dhruv-bhasin-8a791826a" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <div class="container">
+                <div class="introduction-item">
+                   <p> Hello! I'm Dhruv Bhasin, a B.Tech student specializing in Chemical Science and Technology at IIT Guwahati. I have a strong passion for finance, problem-solving, and consulting. My experiences as a Business Data Analyst Intern at Wipro and a Product Development and Strategy Intern at Raizz have equipped me with valuable skills in data visualization and competitive analysis.
+
+                    In addition to my academic pursuits, I hold several leadership positions, including Branch Representative for my department, Product Manager for the Students Web Committee, and Events Head for SPIRIT'24. I am also a core team member at Finance and Economics club where I guide sophomores in finance and business analysis.
+                    I am excited about opportunities that allow me to enhance my skills and leadership experience to drive impactful results.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="container">
+                <div class="education-item">
+                    <h3>B.Tech - Chemical Science and Technology</h3>
+                    <p>Indian Institute of Technology, Guwahati (2022 - present)</p>
+                    <p>CGPA: 7.50 (Current)</p>
+                </div>
+                <div class="education-item">
+                    <h3>Senior Secondary</h3>
+                    <p>CBSE (2020 - 2022)</p>
+                    <p>Percentage: 95.4%</p>
+                </div>
+                <div class="education-item">
+                    <h3>Secondary</h3>
+                    <p>CBSE (2018 - 2020)</p>
+                    <p>Percentage: 94.6%</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="container">
+                <div class="experience-item">
+                    <h3>Business Data Analyst Intern</h3>
+                    <p>Wipro (Jun 2024 - Jul 2024)</p>
+                    <ul>
+                        <li>Designed 3 Excel dashboards to visualize and analyze soap sales across different regions in India.</li>
+                        <li>Conducted data cleaning to enhance sales forecast accuracy and support targeted marketing strategies.</li>
+                        <li>Improved decision-making and strategic planning by providing insights from sales data involving 10 lakh+ entries.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Product Development and Strategy Intern</h3>
+                    <p>Raizz (May 2024 - Jun 2024)</p>
+                    <ul>
+                        <li>Conducted competitive analysis of 20+ fitness apps for gyms and salons, identifying USPs and market trends.</li>
+                        <li>Did feature analysis of 30+ fitness and grooming software to shortlist and prioritize 10 features for Raizz app.</li>
+                        <li>Leveraged UI/UX design to create a user-friendly app, contributing to a significant 20% market share growth.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="container button-container">
+                <button onclick="showProjects('consulting')">Consulting</button>
+                <button onclick="showProjects('finance')">Finance</button>
+               
+            </div>
+            <div id="consulting-projects" class="project-list">
+                <div class="project-item">
+                    <h3>Tackling Food Wastage (Consulting module)</h3>
+                    <p>Kriti'24 (Jan 2024)</p>
+                    <a href="https://drive.google.com/file/d/1_IKKCBamNksbiTXGktvjUb5jBT37RxOP/view?usp=drivesdk" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Led a team of 10+ Freshers and conducted comparative analysis of 9 optimization models to reduce rice wastage.</li>
+                        <li>Conducted Menu analysis of our mess for 7 days and collected data insights of amount of Rice wasted each time.</li>
+                        <li>Worked on UI/UX and feasibility of our proposed solution of P-Rice app estimated to reduce wastage by 15%.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Boosting EV Growth in India</h3>
+                    <p>Consulting & Analytics Club (Summer Project) (Jun 2024)</p>
+                    <a href="https://drive.google.com/file/d/1h2fQ4DJfeGbV1fKeEWWzBpHOxerFODgd/view?usp=drivesdk" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Analyzed BEVs, Green Fuel, and Hybrid Vehicles for environmental impact, cost-efficiency, and market trends.</li>
+                        <li>Created strategic recommendations and presentation, highlighting consumer preferences and industry innovations.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Analysing Cloud Kitchen Problem</h3>
+                    <p>ProductPro Competition, Students Web Committee (IITG) (Mar 2024)</p>
+                    <a href="https://drive.google.com/file/d/1GlZp6hp5Ojx1CZispCOY9WLEFi6M-kHa/view?usp=drivesdk" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Designed a product pitch deck for Zomato, suggesting 3 innovative features involving home operated cloud kitchens.</li>
+                        <li>Developed 2 detailed user personas to effectively target and cater to the diverse needs and preferences of customers.</li>
+                        <li>Implemented go-to-market strategy for the proposed features expected to increase customer base by nearly 10%.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Mall Customer Segmentation</h3>
+                    <p>Summer Analytics (Data Science & ML) (May 2024)</p>
+                    <a href="https://github.com/Dhruvcoder1312/MallCustomerSegmentation" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Implemented K-Means clustering on customer data to segment customers based on age, income, and spending score.</li>
+                        <li>Used Python libraries like Pandas and NumPy for data preprocessing and normalization for accurate clustering.</li>
+                        <li>Visualized the customer segments using Seaborn & Matplotlib to derive insights for targeted marketing strategies.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="finance-projects" class="project-list" style="display:none;">
+                <div class="project-item">
+                    <h3>Mutual Fund Management</h3>
+                    <p>Finance and Economics Club (IITG) (Sept 2023-Feb 2024)</p>
+                    <a href="https://drive.google.com/drive/folders/1e5SZu5GnaCn39FvPDYi2H9658h70ggLK" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Conducted Fundamental Analysis of 50+ small & Midcap companies to shortlist 10 companies from 9 sectors.</li>
+                        <li>Structured and co-authored Equity Research Report and performed DCF & WACC valuation on GAIL.</li>
+                        <li>Pitched an investment proposal, successfully raising a corpus of 70k, which yielded a 10% return on investment.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Union Budget Analysis FY 2024-25</h3>
+                    <p>Finance and Economics Club (Jan 2024)</p>
+                    <a href="https://drive.google.com/file/d/1g8Zj9d34gZpxI/view?usp=sharing" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Analyzed Union Budget 2024, highlighting INR 10 lakh crore for infrastructure, 2.3 lakh crore for agriculture.</li>
+                        <li>Evaluated fiscal deficit trends projected at 5.9% of GDP, with borrowing plans of INR 15.43 lakh crore.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Stock Pitch on Olectra Greentech</h3>
+                    <p>Equity Research Challenge (Udgam) (Dec 2024-Jan 2024)</p>
+                    <a href="https://drive.google.com/file/d/1Ik3gF0q1Hg8/view?usp=sharing" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Built a stock pitch report analyzing Olectra Greentech’s financial health, market growth, and future prospects.</li>
+                        <li>Conducted SWOT & Competitor analysis along with its peers analyzing future risks and roadmap.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Stock Price Prediction</h3>
+                    <p>Personal Project (Core Finance, Data Science & ML) (Jun 2024)</p>
+                    <a href="https://drive.google.com/file/d/1-abc2FGH34/view?usp=sharing" target="_blank"><strong>Report</strong></a>
+                    <ul>
+                        <li>Built a linear regression model to predict stock prices using historical data, achieving an estimated forecast.</li>
+                        <li>Cleaned dataset using pandas library, used Simple Moving Average (SMA) to enhance model performance.</li>
+                        <li>Generated plot to compare actual vs predicted stock prices demonstrating the model’s accuracy and insights.</li>
+                    </ul>
+                </div>
+            </div>
+           
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="container skills-item">
+                <ul>
+                    <li>
+                        <strong>Programming:</strong> C++, Python (libraries: NumPy, Pandas), HTML, CSS, Javascript*, Machine Learning*
+                    </li>
+                    <li>
+                        <strong>Database Management and Queries:</strong> MySQL, MS Excel
+                    </li>
+                    <li>
+                        <strong>Visualization:</strong> MS Powerpoint, Power BI, Figma, Canva, Seaborn*, Matplotlib*
+                    </li>
+                    <li>
+                        <strong>Management:</strong> Strategy formation, Problem solving, Communication, Teamwork
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="Thanks">Thank You</p>
+    </footer>
+</body>
+</html>

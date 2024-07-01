@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.profilephoto {
+    margin-left: 120px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.iitglogo {
+    margin-left: 1050px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.introduction-item {
+    background-color: #dfdcdc;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1, header p {
+    text-align: center;
+}
+
+.contact-info, .social-links {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.contact-info a, .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem 0;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+section h2 {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 -1rem;
+}
+
+.education-item, .experience-item, .project-item, .skills-item {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 0.75rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Skills Section */
+.skills-item ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Thanks{
+    font-size : 2rem;
+}
+
+.skills-item ul li {
+    width: 48%;
+    margin: 0.5rem 0;
+}
+
+/* Button Styles */
+.button-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
